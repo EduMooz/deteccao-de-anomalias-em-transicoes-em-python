@@ -22,7 +22,7 @@ O projeto utiliza algoritmos de classificação supervisionada, técnicas de bal
 
 ## Dataset
 
-Foi utilizado o conjunto de dados público de transações com cartão de crédito disponibilizado pelo TensorFlow.
+Foi utilizado o dataset público Credit Card Fraud Detection, originalmente publicado pelo Machine Learning Group da ULB (Université Libre de Bruxelles) no Kaggle. Neste projeto, os dados foram obtidos através do repositório espelhado pelo TensorFlow.
 
 Características do dataset:
 
@@ -48,10 +48,22 @@ Características do dataset:
 ---
 
 ## Resultados
-![Curva ROC] (assets/ROC_Curve.png)
-![Importância das variaveis] (assets/importancia_das_variaveis.png)
-![Comparativo de metricas] (assets/comparativo_metricas.png)
-![SHAP Value] (assets/SHAP_value.png)
+
+### Curva ROC
+![Curva ROC](assets/ROC_Curve.png)
+*AUC de 0.9335, indicando boa capacidade de separação entre transações legítimas e fraudulentas.*
+
+### Importância das Variáveis
+![Importância das variáveis](assets/importancia_das_variaveis.png)
+*As variáveis V4 e V14 tiveram maior peso na detecção de anomalias.*
+
+### Comparativo de Métricas entre Modelos
+![Comparativo de métricas](assets/comparativo_metricas.png)
+*O modelo XGBoost apresentou o melhor desempenho geral, com Recall de 0.8446 para a classe de fraude.*
+
+### Interpretabilidade com SHAP
+![SHAP Value](assets/SHAP_value.png)
+*Análise SHAP mostrando o impacto individual de cada variável nas previsões do modelo.*
 
 ---
 
