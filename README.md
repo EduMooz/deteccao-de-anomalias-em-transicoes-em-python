@@ -47,6 +47,14 @@ Características do dataset:
 
 ---
 
+## Resultados
+![Curva ROC] (assets/ROC_Curve.png)
+![Importância das variaveis] (assets/importancia_das_variaveis.png)
+![Comparativo de metricas] (assets/comparativo_metricas.png)
+![SHAP Value] (assets/SHAP_value.png)
+
+---
+
 ## Etapas do Projeto
 
 ### 1. Carregamento dos Dados
